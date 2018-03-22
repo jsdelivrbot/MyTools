@@ -1,0 +1,15 @@
+#win-updates-disabler-setup.exe
+
+powercfg -h off
+ 
+#remove apps
+Get-AppxPackage -AllUsers | Remove-AppxPackage
+
+#compress
+COMPACT.EXE /CompactOS:query
+COMPACT.EXE /CompactOS:always
+
+
+open "regedit"
+
+HKEY_CURRENT_USER\Control Panel\Colors -> Window(s)  set   "204 232 207"
