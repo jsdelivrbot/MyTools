@@ -1,0 +1,5 @@
+
+
+Leela Zero訓練好的網路
+
+http://zero.sjeng.org/
